@@ -25,6 +25,7 @@ public class StudentTest {
 
         s1.displayStatus();
         s2.displayStatus();
+        s1.displayData();
     }
 
 }

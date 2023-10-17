@@ -16,7 +16,7 @@ public class Student {
         System.out.println("age is "+age);
     }
     void displayData(){
-        System.out.println(name+" is on "+semester+"semester and GP is"+averageGrade);
+        System.out.println(name+" is on "+semester+" semester and GP is "+averageGrade);
     }
     void changeIdStatus(){
         isIdCardValid = !isIdCardValid;
