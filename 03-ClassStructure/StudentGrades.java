@@ -31,16 +31,19 @@ public class StudentGrades {
 
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Enter the number of grades:");
+        System.out.println("number of grades:");
         int numberOfGrades = scanner.nextInt();
         double[] inputgrades = new double[numberOfGrades];
 
-        System.out.println("Enter the grades:");
+        System.out.println("grades:");
+
         for (int i = 0; i < numberOfGrades; i++) {
             inputgrades[i] = scanner.nextDouble();
+           //2 scanner.nextLine();
         }
         scanner.close();
     }
+
     double lowestGrade(){
         double lowest = 6.0;
         for( double i : grades){
@@ -86,7 +89,7 @@ public class StudentGrades {
         double[] grades2 = {2.0, 3.0, 2.0, 4.5, 4.5};
         StudentGrades s2 = new StudentGrades("James", grades2);
         StudentGrades s3 = new StudentGrades("Kazio", 8);
-        //StudentGrades s4 = new StudentGrades("mmm");
+        StudentGrades s4 = new StudentGrades("mmm");
 
         s1.displayStudentRecord();
         s2.displayStudentRecord();
