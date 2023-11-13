@@ -13,7 +13,7 @@ public class C3 {
     }
 
    static String hideText(String t){
-        String f = t.substring(0, 0);
+        String f = t.substring(0, 1);
         String l = t.substring(t.length()-1);
 
         String ast = "*".repeat(t.length()-2);
