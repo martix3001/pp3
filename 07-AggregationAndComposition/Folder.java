@@ -10,21 +10,24 @@ public class Folder {
         this.path = path;
     }
 
-    public void addFile(String fname,int size){
-        file  = new File(fname,size);
+    public void addFile(String fname,int size,String content){
+        file  = new File(fname,size,content);
+        this.size = this.size + size;
     }
-
     public void changeFileName(String newnName){
         file.setName(newnName);
     }
     public void deleteFile(){
+        this.size = this.size - file.getSize();
         file = null;
         //odśmiecacz sam załatwi sprawę
     }
     public void changeSize(int newsize){
         file.setSize(newsize);
     }
-    
+    public void changeContent(String newcontent){
+        file.setFileContent(newcontent);
+    }
     @Override
     public String toString() {
         if(file != null){

@@ -3,9 +3,10 @@ public class File {
     private int size;
     private String fileContent;
 
-    public File(String name, int size) {
+    public File(String name, int size,String content) {
         this.name = name;
         this.size = size;
+        this.fileContent = content;
     }
 
     public String getName() {
