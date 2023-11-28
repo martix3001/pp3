@@ -1,6 +1,7 @@
 public class File {
     private String name;
     private int size;
+    private String fileContent;
 
     public File(String name, int size) {
         this.name = name;
@@ -21,6 +22,14 @@ public class File {
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public String getFileContent() {
+        return fileContent;
+    }
+
+    public void setFileContent(String fileContent) {
+        this.fileContent = fileContent;
     }
     
 }

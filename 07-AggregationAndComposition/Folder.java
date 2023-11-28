@@ -1,8 +1,8 @@
 public class Folder {
-    String name;
-    int size;
-    String path;
-    File file;
+    private String name;
+    private int size;
+    private String path;
+    private File file;
     
     public Folder(String name, int size, String path) {
         this.name = name;
@@ -33,13 +33,37 @@ public class Folder {
         return "Folder " + name + " o rozmiarze " + size + "KB w miejscu " + path + " nie zawiera plików ";
     }
 
-    public static void main(String[] args) {
-        
-        Folder f1 = new Folder("NowyFolder", 3,"C:/Pulpit");
-        f1.addFile("Nowy Dokumet Tekstowy", 6);
-        System.out.println(f1.toString());
-        f1.deleteFile();
-        System.out.println(f1.toString());
-
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public File getFile() {
+        return file;
+    }
+
+    public void setFile(File file) {
+        this.file = file;
+    }
+
+  
 }
