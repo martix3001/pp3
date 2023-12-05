@@ -1,8 +1,10 @@
 public class Audiobook extends Book {
     private int duration;
 
-    public Audiobook(String title, String author, int duration) {
-        super(title, author);
+    
+
+    public Audiobook(String title, String author, Publisher publisher, int duration) {
+        super(title, author, publisher);
         this.duration = duration;
     }
 
@@ -14,7 +16,7 @@ public class Audiobook extends Book {
         this.duration = duration;
     }
     public void display(){
-        System.out.println("Audiobook "+ getTitle()+" by "+getAuthor()+" and it last for "+duration+" minutes");
+        System.out.println("Audiobook "+ getTitle()+" by "+getAuthor()+" and it last for "+duration+" minutes"+getPublisher().display());
     }
     
 }
