@@ -1,0 +1,19 @@
+public class C implements I {
+//INTERFEJSY SIE IMPLEMENTUJE NIE EXTENDUJE
+//PO CO INTERFEJS??
+//KLASA C MOGLABY TYLKO DZIEDZICZYC TYLKO Z NP A
+//ALE IMPLEMENTOWAC MOZNA WIECEJ NIZ JEDEN INTREFEJSS    
+//W IN MOGA BYC TYLKO ABSTRAKCYJNE 
+
+    @Override
+    public void m2() {
+
+        
+    }
+        
+    
+    
+
+    
+    
+}
